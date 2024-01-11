@@ -1,0 +1,19 @@
+﻿<Window x:Class="CaptureWebcam.ImageWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CaptureWebcam"
+        mc:Ignorable="d"
+        Title="ImageWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Image x:Name="ImageViewer" Source="{Binding Image}" Stretch="Uniform" Margin="86,35,86,90" />
+        <Button Content="UPLOAD TO FIREBASE" HorizontalAlignment="Left" Margin="84,363,0,0" VerticalAlignment="Top"  Click="Button_UploadToFirebase" Height="39" Width="263" FontSize="22" FontWeight="Bold"/>
+        <Button Content="DELETE" HorizontalAlignment="Left" Margin="545,363,0,0" VerticalAlignment="Top"  Click="Button_Delete" Height="39" Width="176" FontSize="22" FontWeight="Bold"/>
+    
+    </Grid>
+</Window>
